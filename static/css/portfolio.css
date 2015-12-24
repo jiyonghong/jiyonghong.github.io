@@ -1,0 +1,325 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@font-face {
+  font-family: 'fontello';
+  src: url("../font/fontello.eot?70576351");
+  src: url("../font/fontello.eot?70576351#iefix") format("embedded-opentype"), url("../font/fontello.woff?70576351") format("woff"), url("../font/fontello.ttf?70576351") format("truetype"), url("../font/fontello.svg?70576351#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?70576351#fontello') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+.icon-facebook-official:before {
+  content: '\e800'; }
+
+/* '' */
+.icon-instagram:before {
+  content: '\e801'; }
+
+/* '' */
+.icon-github-squared:before {
+  content: '\e802'; }
+
+/* '' */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', 'Arial', sans-serif; }
+
+html {
+  font-size: 62.5%; }
+
+html, body {
+  height: 100%; }
+
+body {
+  font-size: 1.6rem;
+  background-color: #e4e6ef; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+a img {
+  outline: 0;
+  border: none; }
+
+h1 {
+  font-size: 3rem; }
+
+h2 {
+  font-size: 2.6rem; }
+
+h3 {
+  font-size: 2.4rem; }
+
+h4 {
+  font-size: 2.2rem; }
+
+h5 {
+  font-size: 2rem; }
+
+h6 {
+  font-size: 1.8rem; }
+
+p {
+  line-height: 150%; }
+
+ul {
+  padding: 10px 20px;
+  list-style-position: inside; }
+
+aside#side-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 100%;
+  background-color: #fff;
+  text-align: center;
+  font-size: 1.4rem; }
+  aside#side-nav header {
+    padding: 30px; }
+    aside#side-nav header #logo {
+      max-width: 100%; }
+  aside#side-nav nav {
+    margin-top: 50px; }
+    aside#side-nav nav * + * {
+      margin-top: 20px; }
+    aside#side-nav nav a {
+      display: block;
+      color: #333;
+      text-transform: uppercase; }
+  aside#side-nav footer {
+    position: absolute;
+    width: 100%;
+    padding: 10px 20px 20px 20px;
+    color: #8a8a8a;
+    bottom: 0;
+    left: 0;
+    font-weight: lighter;
+    background-color: #fff; }
+    aside#side-nav footer i {
+      font-size: 1.6rem;
+      line-height: 150%; }
+      aside#side-nav footer i:hover {
+        color: #4d4866; }
+    aside#side-nav footer p {
+      font-size: 1.2rem; }
+
+section#contents {
+  padding-left: 150px;
+  height: 100%;
+  color: #4d4866; }
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.fade-in {
+  opacity: 0;
+  -webkit-animation: fadeIn 0.5s 0.1s ease forwards;
+  animation: fadeIn 0.5s 0.1s ease forwards; }
+
+.bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.v-wrap {
+  display: table;
+  width: 100%;
+  height: 100%; }
+  .v-wrap .v-align {
+    display: table-cell;
+    vertical-align: middle; }
+
+.container {
+  max-width: 1000px;
+  padding: 30px; }
+  .container article + article {
+    margin-top: 80px; }
+
+.pusher {
+  line-height: 250%; }
+
+.subtitle {
+  margin-bottom: 10px; }
+
+.row {
+  font-size: 0; }
+
+.col {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 1.6rem; }
+
+@media all and (min-width: 881px) {
+  .col.l1 {
+    width: 8.33333%; }
+  .col.l2 {
+    width: 16.66667%; }
+  .col.l3 {
+    width: 25%; }
+  .col.l4 {
+    width: 33.33333%; }
+  .col.l5 {
+    width: 41.66667%; }
+  .col.l6 {
+    width: 50%; }
+  .col.l7 {
+    width: 58.33333%; }
+  .col.l8 {
+    width: 66.66667%; }
+  .col.l9 {
+    width: 75%; }
+  .col.l10 {
+    width: 83.33333%; }
+  .col.l11 {
+    width: 91.66667%; }
+  .col.l12 {
+    width: 100%; } }
+
+@media all and (min-width: 641px) and (max-width: 880px) {
+  .col.m1 {
+    width: 8.33333%; }
+  .col.m2 {
+    width: 16.66667%; }
+  .col.m3 {
+    width: 25%; }
+  .col.m4 {
+    width: 33.33333%; }
+  .col.m5 {
+    width: 41.66667%; }
+  .col.m6 {
+    width: 50%; }
+  .col.m7 {
+    width: 58.33333%; }
+  .col.m8 {
+    width: 66.66667%; }
+  .col.m9 {
+    width: 75%; }
+  .col.m10 {
+    width: 83.33333%; }
+  .col.m11 {
+    width: 91.66667%; }
+  .col.m12 {
+    width: 100%; } }
+
+@media all and (max-width: 640px) {
+  .col.s1 {
+    width: 8.33333%; }
+  .col.s2 {
+    width: 16.66667%; }
+  .col.s3 {
+    width: 25%; }
+  .col.s4 {
+    width: 33.33333%; }
+  .col.s5 {
+    width: 41.66667%; }
+  .col.s6 {
+    width: 50%; }
+  .col.s7 {
+    width: 58.33333%; }
+  .col.s8 {
+    width: 66.66667%; }
+  .col.s9 {
+    width: 75%; }
+  .col.s10 {
+    width: 83.33333%; }
+  .col.s11 {
+    width: 91.66667%; }
+  .col.s12 {
+    width: 100%; } }
+
+#about-me h1 {
+  text-transform: uppercase; }
+  @media all and (min-width: 881px) {
+    #about-me h1 {
+      font-size: 9rem; } }
+  @media all and (min-width: 641px) and (max-width: 880px) {
+    #about-me h1 {
+      font-size: 7rem; } }
+  @media all and (max-width: 640px) {
+    #about-me h1 {
+      font-size: 4rem; } }
+
+#goal__wannabe {
+  font-size: 2rem; }
+
+@media all and (min-width: 881px) {
+  .work__item {
+    padding-bottom: 23%; } }
+
+@media all and (min-width: 641px) and (max-width: 880px) {
+  .work__item {
+    padding-bottom: 33%; } }
+
+@media all and (max-width: 640px) {
+  .work__item {
+    padding-bottom: 50%; } }
+
+.work__item {
+  position: relative; }
+  .work__item__container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: #e4e6ef;
+    -webkit-transition: 0.2s ease;
+    -moz-transition: 0.2s ease;
+    -ms-transition: 0.2s ease;
+    transition: 0.2s ease; }
+  .work__item__title {
+    position: relative;
+    text-align: center;
+    text-transform: uppercase; }
+  .work__item:hover .work__item__container {
+    opacity: 1; }
