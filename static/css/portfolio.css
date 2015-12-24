@@ -113,11 +113,12 @@ aside#side-nav {
   height: 100%;
   background-color: #fff;
   text-align: center;
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  z-index: 1000; }
   aside#side-nav header {
-    padding: 30px; }
+    padding: 30px 0; }
     aside#side-nav header #logo {
-      max-width: 100%; }
+      width: 90px; }
   aside#side-nav nav {
     margin-top: 50px; }
     aside#side-nav nav * + * {
@@ -142,11 +143,41 @@ aside#side-nav {
         color: #4d4866; }
     aside#side-nav footer p {
       font-size: 1.2rem; }
+  @media all and (max-width: 640px) {
+    aside#side-nav {
+      display: none; } }
 
 section#contents {
   padding-left: 150px;
   height: 100%;
   color: #4d4866; }
+  @media all and (max-width: 640px) {
+    section#contents {
+      padding-left: 0; } }
+
+header#top-nav {
+  display: none;
+  background-color: #fff;
+  text-align: center; }
+  header#top-nav #mobile-logo {
+    width: 90px;
+    padding: 20px 0; }
+  header#top-nav nav a {
+    margin: 0 10px; }
+  header#top-nav #mobile-sns {
+    padding: 20px 0;
+    font-size: 1.8rem; }
+  @media all and (max-width: 640px) {
+    header#top-nav {
+      display: block; } }
+
+footer#mobile-footer {
+  display: none;
+  text-align: center;
+  padding: 20px 0; }
+  @media all and (max-width: 640px) {
+    footer#mobile-footer {
+      display: block; } }
 
 @-webkit-keyframes fadeIn {
   from {
